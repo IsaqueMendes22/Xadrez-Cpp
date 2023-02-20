@@ -1,2 +1,3 @@
 # Xadrez Cpp
- a gaame text
+ a game text
+ 
