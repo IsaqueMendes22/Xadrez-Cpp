@@ -142,8 +142,8 @@ void Tutorial(){
 	le = 7;
 	ce = 5;
 	Tab[7][5] = "PP ";
-	Tab[6][4] = "PC ";
-	Tab[6][6] = "PC ";
+	Tab[6][4] = "TC ";
+	Tab[6][6] = "TC ";
 	ExibirTab();
 	cout << "O Peão pode:" << endl;
 	cin >> x;
@@ -212,14 +212,14 @@ void Tutorial(){
 	le = 5;
 	ce = 5;
 	Tab[5][5] = "CP ";
-	Tab[3][4] = "CC "; // 2
-	Tab[3][6] = "CC "; // 3
-	Tab[4][3] = "CC "; // Q 
-	Tab[4][7] = "CC "; // R 
-	Tab[6][3] = "CC "; // A 
-	Tab[6][7] = "CC "; // F 
-	Tab[7][4] = "CC "; // Z 
-	Tab[7][6] = "CC "; // C
+	Tab[3][4] = "TC "; // 2
+	Tab[3][6] = "TC "; // 3
+	Tab[4][3] = "TC "; // Q 
+	Tab[4][7] = "TC "; // R 
+	Tab[6][3] = "TC "; // A 
+	Tab[6][7] = "TC "; // F 
+	Tab[7][4] = "TC "; // Z 
+	Tab[7][6] = "TC "; // C
 	ExibirTab();
 	cout << "O Cavalo pode:" << endl;
 	cin >> x;
@@ -252,10 +252,10 @@ void Tutorial(){
 	le = 5;
 	ce = 5;
 	Tab[5][5] = "BP ";
-	Tab[2][2] = "RC "; // Q 
-	Tab[2][8] = "RC "; // E 
-	Tab[8][2] = "RC "; // Z 
-	Tab[8][8] = "RC "; // C 
+	Tab[2][2] = "TC "; // Q 
+	Tab[2][8] = "TC "; // E 
+	Tab[8][2] = "TC "; // Z 
+	Tab[8][8] = "TC "; // C 
 	ExibirTab();
 	cout << "O Bipo pode:" << endl;
 	cin >> x;
@@ -284,14 +284,14 @@ void Tutorial(){
 	le = 5;
 	ce = 5;
 	Tab[5][5] = "RP "; 
-	Tab[2][2] = "RC "; // Q 
-	Tab[2][8] = "RC "; // E 
-	Tab[8][2] = "RC "; // Z 
-	Tab[8][8] = "RC "; // C 
-	Tab[2][5] = "RC "; // ^ == W 
-	Tab[5][2] = "RC "; // <- == A 
-	Tab[5][8] = "RC "; // -> == D 
-	Tab[8][5] = "RC "; // v == X 
+	Tab[2][2] = "TC "; // Q 
+	Tab[2][8] = "TC "; // E 
+	Tab[8][2] = "TC "; // Z 
+	Tab[8][8] = "TC "; // C 
+	Tab[2][5] = "TC "; // ^ == W 
+	Tab[5][2] = "TC "; // <- == A 
+	Tab[5][8] = "TC "; // -> == D 
+	Tab[8][5] = "TC "; // v == X 
 	ExibirTab();
 	cout << "A Rainha pode:" << endl;
 	cin >> x;
@@ -319,7 +319,7 @@ void Tutorial(){
 	LimpaArena();
 	le = 5;
 	ce = 5;
-	Tab[5][5] = "rC "; // Q 	
+	Tab[5][5] = "rP "; // Q 	
 	Tab[4][4] = "CC "; // Q 
 	Tab[4][5] = "CC "; // W 
 	Tab[4][6] = "CC "; // E 
