@@ -5,6 +5,7 @@
 using namespace std;
 
 //protótipos:
+void Tutorial();
 void Resets();
 void ExibirTab();
 void Legendas();
@@ -34,6 +35,7 @@ void Teste3(); //cavalo
 void Teste4(); //rei
 void Teste5(); //peças CPU
 void Teste6(); //gameover
+void LimpaArena(); // to usando só no tutorial por enquanto, mas poderia ter em outras funções tbm pra otimizar
 
 //variaveis globais:
 bool PecaValida, MovimentoValido;
@@ -63,8 +65,20 @@ int main(){
 	//setlocale(LC_ALL, "Portuguese_Brazil");
 	
 	srand(time(NULL));//ativa mudança de sementes pra geração de números aleatórios nas outras funções
+	string R; //esposta
 
 	do{
+		system("cls");
+		cout << "Xadrez by Isaque Mendes" << endl;
+		do{
+			cout << "deseja ver tutorial? (s/n)";
+			cin >> R;
+			if (R=="s"){
+				Tutorial();
+			}
+			system("cls");
+		}while(R!="n"); 
+		
 		Resets();
 		//Teste6(); // use isso pra testar mudando as inicializações do resets() e mantenha todo o jogo normal pra testar o q quiser
 		do{
@@ -73,6 +87,270 @@ int main(){
 	}while(Continue != 2);
 
 	return 0;
+}
+
+void Tutorial(){
+	
+	Resets();
+	ExibirTab();
+	cout << "Tutorial" << endl;
+	cin >> x;
+	cout << "esse é o tabuleiro de 8 linhas e 8 colunas" << endl << endl;
+	cin >> x;
+	Legendas();
+	cout << "espaços vazios representam CASAS BRANCAS." << endl;
+	cin >> x;
+	cout << "espaços com [ ] representam CASAS PRETAS." << endl << endl;
+	cin >> x;
+	cout << "suas peças terminam com P de player." << endl;
+	cin >> x;
+	cout << "peças da máquina terminam em C de CPU." << endl << endl;
+	cin >> x;
+	cout << "digite qualquer coisa pra continuar" << endl;
+	cin >> x;
+	system("cls");
+
+	cout << "tanto Player quanto CPU usam os mesmos tipos de peças. São elas:" << endl;
+	cin >> x;
+	cout << "Peão, Torre, Cavalo, Bispo, Rainha e Rei." << endl;
+	cin >> x;
+	cout << "O objetivo é proteger o seu Rei e Capturar o Rei da CPU." << endl << endl;
+	cin >> x;
+	cout << "O passo a passo a seguir é comum a todas as peças:" << endl << endl;
+	cin >> x;
+	cout << "Passo 1: Selecione uma coordenada (linha e coluna) q tenha uma peça sua (terminada em P)." << endl;
+	cin >> x;
+	cout << "Passo 2: Selecione uma direção válida (cada peça é diferente)." << endl;
+	cin >> x;
+	cout << "Passo 3: Algumas peças ainda perguntam quantas casas voce deseja andar." << endl;
+	cin >> x;
+	cout << "observação: ao capturar uma peça inimiga, sua peça fica no lugar dela." << endl;
+	cin >> x;
+	cout << "Passo 4: Veja sua última jogada e continue para a máquina jogar, e repita o processo." << endl;
+	cin >> x;
+	cout << "O jogo termina quando um dos Reis morre!" << endl << endl;
+	cin >> x;
+	cout << "A seguir seerá mostrado como jogar com cada peça." << endl;
+	cin >> x;
+	cout << "digite qualquer coisa pra continuar:" << endl;
+	cin >> x;
+	system("cls");
+
+	//peão ======================================================
+
+	LimpaArena();
+	le = 7;
+	ce = 5;
+	Tab[7][5] = "PP ";
+	Tab[6][4] = "PC ";
+	Tab[6][6] = "PC ";
+	ExibirTab();
+	cout << "O Peão pode:" << endl;
+	cin >> x;
+	cout << "andar 2 casas pra frente, apenas na primeira jogada dele" << endl;
+	cin >> x;
+	cout << "andar 1 casa para frente, em qualquer jogada" << endl;
+	cin >> x;
+	cout << "comer peça inimiga nas diagonais esquerda ou direita" << endl << endl;
+	cin >> x;
+
+	cout << "Assim aparece as opções do seu Peão:" << endl << endl;
+	cin >> x;
+   	cout << "Seu PEÃO, da linha" << le << ", coluna" << ce << endl;
+   	cout << "Selecione uma ação:" << endl;
+    cout << "     ^ 2" << endl;
+    cout << "     |" << endl;
+   	cout << "  q  w  e" << endl;
+   	cout << "   \\ | / " << endl;
+   	cout << "     +   " << endl << endl;
+	cin >> x;
+
+	cout << "Obs: Ao atravessar a arena, seu peão pode ser promovido para Cavalo, Bispo, Torre ou Rainha!" << endl<< endl;
+	cin >> x;
+
+	cout << "digite qualquer coisa pra continuar:" << endl;
+	cin >> x;
+	system("cls");
+
+	//torre ======================================================
+
+	LimpaArena();
+	le = 5;
+	ce = 5;
+	Tab[5][5] = "TP ";
+	Tab[2][5] = "RC "; // ^ == W 
+	Tab[5][2] = "RC "; // <- == A 
+	Tab[5][8] = "RC "; // -> == D 
+	Tab[8][5] = "RC "; // v == X 
+	ExibirTab();
+	cout << "A Torre pode:" << endl;
+	cin >> x;
+	cout << "andar e capturar na horizontal e vertical (pra cima, baixo, esquerda e direita) quantas casas quiser" << endl << endl;
+	cin >> x;
+
+	cout << "Assim aparece as opções do sua Torre:" << endl << endl;
+	cin >> x;
+	cout << "Sua TORRE, da linha" << le << " coluna" << ce << endl;
+	cout << "Selecione uma direção:" << endl;
+	cout << endl;
+	cout << "     W      " << endl;
+	cout << "     ^      " << endl;
+	cout << "     |      " << endl;
+	cout << "A <- + -> D " << endl;
+	cout << "     |      " << endl;
+	cout << "     v      " << endl;
+	cout << "     X      " << endl << endl;
+	cin >> x;
+
+	cout << "digite qualquer coisa pra continuar:" << endl;
+	cin >> x;
+	system("cls");
+
+	//cavalo ======================================================
+
+	LimpaArena();
+	le = 5;
+	ce = 5;
+	Tab[5][5] = "CP ";
+	Tab[3][4] = "CC "; // 2
+	Tab[3][6] = "CC "; // 3
+	Tab[4][3] = "CC "; // Q 
+	Tab[4][7] = "CC "; // R 
+	Tab[6][3] = "CC "; // A 
+	Tab[6][7] = "CC "; // F 
+	Tab[7][4] = "CC "; // Z 
+	Tab[7][6] = "CC "; // C
+	ExibirTab();
+	cout << "O Cavalo pode:" << endl;
+	cin >> x;
+	cout << "andar em L (2 casas e dps 1 (ou ao contrário, tanto faz))" << endl;
+	cin >> x;
+	cout << "Obs: ele ignora(pula) qualquer peça q esteja no caminho" << endl << endl;
+	cin >> x;
+
+	cout << "Assim aparece as opções do seu Cavalo:" << endl << endl;
+	cin >> x;
+	cout << "Seu CAVALO, da linha" << le << ", coluna"<< ce << endl;
+	cout << "Selecione uma direção:" <<  endl;
+	cout << endl;
+	cout << "   2_   _3   " << endl;
+	cout << "Q    | |    R" << endl;
+	cout << " |___| |___| " << endl;
+	cout << "  ___ + ___  " << endl;
+	cout << " |   | |   | " << endl;
+	cout << "A   _| |_   F" << endl;
+	cout << "   Z     C   " << endl << endl;
+	cin >> x;
+	
+	cout << "digite qualquer coisa pra continuar:" << endl;
+	cin >> x;
+	system("cls");
+
+	//bispo ======================================================
+
+	LimpaArena();
+	le = 5;
+	ce = 5;
+	Tab[5][5] = "BP ";
+	Tab[2][2] = "RC "; // Q 
+	Tab[2][8] = "RC "; // E 
+	Tab[8][2] = "RC "; // Z 
+	Tab[8][8] = "RC "; // C 
+	ExibirTab();
+	cout << "O Bipo pode:" << endl;
+	cin >> x;
+	cout << "andar nas diagonais quantas casas quiser." << endl << endl;
+	cin >> x;
+
+	cout << "Assim aparece as opções do seu Bispo:" << endl << endl;
+	cin >> x;
+	cout << "Seu BISPO, da linha" << le << ", coluna" << ce << endl;
+	cout << "Selecione uma direção:" << endl;
+	cout << endl;
+	cout << "Q       E  " << endl;
+	cout << "  \\   /    " << endl;
+	cout << "    +      " << endl;
+	cout << "  /   \\    " << endl;
+	cout << "Z       C  " << endl << endl;
+	cin >> x;
+
+	cout << "digite qualquer coisa pra continuar:" << endl;
+	cin >> x;
+	system("cls");
+
+	//rainha ======================================================
+
+	LimpaArena();
+	le = 5;
+	ce = 5;
+	Tab[5][5] = "RP "; 
+	Tab[2][2] = "RC "; // Q 
+	Tab[2][8] = "RC "; // E 
+	Tab[8][2] = "RC "; // Z 
+	Tab[8][8] = "RC "; // C 
+	Tab[2][5] = "RC "; // ^ == W 
+	Tab[5][2] = "RC "; // <- == A 
+	Tab[5][8] = "RC "; // -> == D 
+	Tab[8][5] = "RC "; // v == X 
+	ExibirTab();
+	cout << "A Rainha pode:" << endl;
+	cin >> x;
+	cout << "andar nas horizontais, verticais e diagonais quantas casas quiser (é a Torre e o Bispo numa única peça)." << endl << endl;
+	cin >> x;
+
+	cout << "Assim aparece as opções da sua Rainha:" << endl << endl;
+	cin >> x;
+	cout << "Sua RAINHA, da linha" << le << " coluna" << ce << endl;
+	cout << "Selecione uma direção:" << endl;
+	cout << endl;
+	cout << " Q  W  E  " << endl;
+	cout << "  \\ ^ /   " << endl;
+	cout << "A < + > D " << endl;
+	cout << "  / v \\   " << endl;
+	cout << " Z  X  C  " << endl << endl;
+	cin >> x;
+
+	cout << "digite qualquer coisa pra continuar:" << endl;
+	cin >> x;
+	system("cls");
+
+	//rei ======================================================
+
+	LimpaArena();
+	le = 5;
+	ce = 5;
+	Tab[5][5] = "rC "; // Q 	
+	Tab[4][4] = "CC "; // Q 
+	Tab[4][5] = "CC "; // W 
+	Tab[4][6] = "CC "; // E 
+	Tab[5][4] = "CC "; // A 
+	Tab[5][6] = "CC "; // D 
+	Tab[6][4] = "CC "; // Z 
+	Tab[6][5] = "CC "; // X 
+	Tab[6][6] = "CC "; // C <<------
+	ExibirTab();
+	cout << "O Rei pode:" << endl;
+	cin >> x;
+	cout << "andar nas horizontais, verticais e diagonais APENAS 1 CASA." << endl << endl;
+	cin >> x;
+
+	cout << "Assim aparece as opções do seu Rei:" << endl << endl;
+	cin >> x;
+	cout << "Seu REI, da linha" << le << " coluna" << ce << endl;
+	cout << "Selecione uma direção:" << endl;
+	cout << endl;
+	cout << " Q  W  E  " << endl;
+	cout << "  \\ ^ /   " << endl;
+	cout << "A < + > D " << endl;
+	cout << "  / v \\   " << endl;
+	cout << " Z  X  C  " << endl << endl;
+	cin >> x;
+
+	cout << "Fim do tutorial!" << endl;
+	cin >> x;
+	cout << "digite qualquer coisa pra continuar:" << endl;
+	cin >> x;
+	system("cls");
 }
 
 void Resets(){
@@ -195,7 +473,7 @@ void Legendas(){
 	cout << "  RP = Rainha do Player / RC = Rainha da CPU" << endl;
 	cout << "  rP = Rei do Player    / rC = Rei da CPU" << endl;
 	cout << endl;
-	cout << "(aperte qualquer coisa para voltar ao jogo)" << endl;
+	cout << "(aperte qualquer coisa para continuar)" << endl;
 	cin >> x; // pra sair
 
 }
@@ -2858,4 +3136,14 @@ void Teste6(){
 
 	Tab[5][7] = "rP ";
 
+}
+
+void LimpaArena(){
+
+	// garantindo arena vazia antes de prencher
+	for (int l=1; l<=8; l++){
+    	for (int c=1; c<=8; c++){
+        	Tab[l][c] = "  ";// aki n pode ser vazio, se não dá erro da comparação de JogAt ou JogAdv na movimentação de algumas peças
+  		}
+	}
 }
