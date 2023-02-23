@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstdlib> // para usar system pause
 #include <ctime> // pra usar srand (números aleatórios)
-#include <locale.h> // pra liberar todos os caracteres
+#include <locale> // pra liberar todos os caracteres
 using namespace std;
 
 //protótipos:
@@ -59,6 +59,8 @@ int Continue; // maiúsculo pq o minúsculo já é palavra reservada
 //-----------------------------------------------------
 
 int main(){
+
+	//setlocale(LC_ALL,"");
 	setlocale(LC_ALL,"pt_BR.UTF-8");
 	//setlocale(LC_ALL, "portuguese");
 	//setlocale(LC_ALL, "Portuguese");
@@ -639,7 +641,7 @@ void PeaoP(){
       cout << "     |" << endl;
    	}
    	cout << "  q  w  e" << endl;
-   	cout << "  \\ | / " << endl;
+   	cout << "   \\ | / " << endl;
    	cout << "     +   " << endl;
 
    	cin >> R;
@@ -1165,9 +1167,9 @@ void BispoP(){
 	cout << "Selecione uma direção:" << endl;
 	cout << endl;
 	cout << "Q       E  " << endl;
-	cout << " \\   /    " << endl;
+	cout << "  \\   /    " << endl;
 	cout << "    +      " << endl;
-	cout << "  /  \\    " << endl;
+	cout << "  /   \\    " << endl;
 	cout << "Z       C  " << endl;
 	cin >> R;
 	
