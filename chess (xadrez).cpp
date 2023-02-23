@@ -1671,9 +1671,9 @@ void ReiP() {
 	cout << "Selecione uma direção:" << endl;
 	cout << endl;
 	cout << " Q  W  E  " << endl;
-	cout << " \\ ^ /   " << endl;
+	cout << "  \\ ^ /   " << endl;
 	cout << "A < + > D " << endl;
-	cout << "  / v\\   " << endl;
+	cout << "  / v \\   " << endl;
 	cout << " Z  X  C  " << endl;
 	cin >> R;
 
