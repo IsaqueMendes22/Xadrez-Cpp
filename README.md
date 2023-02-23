@@ -1,5 +1,7 @@
 # Xadrez Cpp
- a game text
+a text game
+
+---------------
 
 Initial code.
 
