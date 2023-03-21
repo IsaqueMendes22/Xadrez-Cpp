@@ -60,7 +60,7 @@ int Continue; // maiúsculo pq o minúsculo já é palavra reservada
 
 int main(){
 
-	//setlocale(LC_ALL,"");
+	//setlocale(LC_ALL,""); nada disso funcionaou... sad :(
 	setlocale(LC_ALL,"pt_BR.UTF-8");
 	//setlocale(LC_ALL, "portuguese");
 	//setlocale(LC_ALL, "Portuguese");
@@ -97,42 +97,42 @@ void Tutorial(){
 	ExibirTab();
 	cout << "Tutorial" << endl;
 	cin >> x;
-	cout << "esse é o tabuleiro de 8 linhas e 8 colunas" << endl << endl;
+	cout << "esse eh o tabuleiro de 8 linhas e 8 colunas" << endl << endl;
 	cin >> x;
 	Legendas();
-	cout << "espaços vazios representam CASAS BRANCAS." << endl;
+	cout << "espacos vazios representam CASAS BRANCAS." << endl;
 	cin >> x;
-	cout << "espaços com [ ] representam CASAS PRETAS." << endl << endl;
+	cout << "espacos com [ ] representam CASAS PRETAS." << endl << endl;
 	cin >> x;
-	cout << "suas peças terminam com P de player." << endl;
+	cout << "suas pecas terminam com P de player." << endl;
 	cin >> x;
-	cout << "peças da máquina terminam em C de CPU." << endl << endl;
+	cout << "pecas da maquina terminam em C de CPU." << endl << endl;
 	cin >> x;
 	cout << "digite qualquer coisa pra continuar" << endl;
 	cin >> x;
 	system("cls");
 
-	cout << "tanto Player quanto CPU usam os mesmos tipos de peças. São elas:" << endl;
+	cout << "tanto Player quanto CPU usam os mesmos tipos de pecas. Sao elas:" << endl;
 	cin >> x;
-	cout << "Peão, Torre, Cavalo, Bispo, Rainha e Rei." << endl;
+	cout << "Peao, Torre, Cavalo, Bispo, Rainha e Rei." << endl;
 	cin >> x;
-	cout << "O objetivo é proteger o seu Rei e Capturar o Rei da CPU." << endl << endl;
+	cout << "O objetivo eh proteger o seu Rei e Capturar o Rei da CPU." << endl << endl;
 	cin >> x;
-	cout << "O passo a passo a seguir é comum a todas as peças:" << endl << endl;
+	cout << "O passo a passo a seguir eh comum a todas as pecas:" << endl << endl;
 	cin >> x;
-	cout << "Passo 1: Selecione uma coordenada (linha e coluna) q tenha uma peça sua (terminada em P)." << endl;
+	cout << "Passo 1: Selecione uma coordenada (linha e coluna) q tenha uma peca sua (terminada em P)." << endl;
 	cin >> x;
-	cout << "Passo 2: Selecione uma direção válida (cada peça é diferente)." << endl;
+	cout << "Passo 2: Selecione uma direcao valida (cada peca eh diferente)." << endl;
 	cin >> x;
-	cout << "Passo 3: Algumas peças ainda perguntam quantas casas voce deseja andar." << endl;
+	cout << "Passo 3: Algumas pecas ainda perguntam quantas casas voce deseja andar." << endl;
 	cin >> x;
-	cout << "observação: ao capturar uma peça inimiga, sua peça fica no lugar dela." << endl;
+	cout << "observacao: ao capturar uma peca inimiga, sua peca fica no lugar dela." << endl;
 	cin >> x;
-	cout << "Passo 4: Veja sua última jogada e continue para a máquina jogar, e repita o processo." << endl;
+	cout << "Passo 4: Veja sua ultima jogada e continue para a maquina jogar, e repita o processo." << endl;
 	cin >> x;
 	cout << "O jogo termina quando um dos Reis morre!" << endl << endl;
 	cin >> x;
-	cout << "A seguir seerá mostrado como jogar com cada peça." << endl;
+	cout << "A seguir sera mostrado como jogar com cada peca." << endl;
 	cin >> x;
 	cout << "digite qualquer coisa pra continuar:" << endl;
 	cin >> x;
@@ -147,19 +147,19 @@ void Tutorial(){
 	Tab[6][4] = "TC ";
 	Tab[6][6] = "TC ";
 	ExibirTab();
-	cout << "O Peão pode:" << endl;
+	cout << "O Peao pode:" << endl;
 	cin >> x;
 	cout << "andar 2 casas pra frente, apenas na primeira jogada dele" << endl;
 	cin >> x;
 	cout << "andar 1 casa para frente, em qualquer jogada" << endl;
 	cin >> x;
-	cout << "comer peça inimiga nas diagonais esquerda ou direita" << endl << endl;
+	cout << "comer peca inimiga nas diagonais esquerda ou direita" << endl << endl;
 	cin >> x;
 
-	cout << "Assim aparece as opções do seu Peão:" << endl << endl;
+	cout << "Assim aparece as opcoes do seu Peao:" << endl << endl;
 	cin >> x;
-   	cout << "Seu PEÃO, da linha" << le << ", coluna" << ce << endl;
-   	cout << "Selecione uma ação:" << endl;
+   	cout << "Seu PEAO, da linha" << le << ", coluna" << ce << endl;
+   	cout << "Selecione uma acao:" << endl;
     cout << "     ^ 2" << endl;
     cout << "     |" << endl;
    	cout << "  q  w  e" << endl;
@@ -167,7 +167,7 @@ void Tutorial(){
    	cout << "     +   " << endl << endl;
 	cin >> x;
 
-	cout << "Obs: Ao atravessar a arena, seu peão pode ser promovido para Cavalo, Bispo, Torre ou Rainha!" << endl<< endl;
+	cout << "Obs: Ao atravessar a arena, seu peao pode ser promovido para Cavalo, Bispo, Torre ou Rainha!" << endl<< endl;
 	cin >> x;
 
 	cout << "digite qualquer coisa pra continuar:" << endl;
@@ -190,10 +190,10 @@ void Tutorial(){
 	cout << "andar e capturar na horizontal e vertical (pra cima, baixo, esquerda e direita) quantas casas quiser" << endl << endl;
 	cin >> x;
 
-	cout << "Assim aparece as opções do sua Torre:" << endl << endl;
+	cout << "Assim aparece as opcoes do sua Torre:" << endl << endl;
 	cin >> x;
 	cout << "Sua TORRE, da linha" << le << " coluna" << ce << endl;
-	cout << "Selecione uma direção:" << endl;
+	cout << "Selecione uma direcao:" << endl;
 	cout << endl;
 	cout << "     W      " << endl;
 	cout << "     ^      " << endl;
@@ -225,15 +225,15 @@ void Tutorial(){
 	ExibirTab();
 	cout << "O Cavalo pode:" << endl;
 	cin >> x;
-	cout << "andar em L (2 casas e dps 1 (ou ao contrário, tanto faz))" << endl;
+	cout << "andar em L (2 casas e dps 1 (ou ao contrario, tanto faz))" << endl;
 	cin >> x;
-	cout << "Obs: ele ignora(pula) qualquer peça q esteja no caminho" << endl << endl;
+	cout << "Obs: ele ignora(pula) qualquer peca q esteja no caminho" << endl << endl;
 	cin >> x;
 
-	cout << "Assim aparece as opções do seu Cavalo:" << endl << endl;
+	cout << "Assim aparece as opcoes do seu Cavalo:" << endl << endl;
 	cin >> x;
 	cout << "Seu CAVALO, da linha" << le << ", coluna"<< ce << endl;
-	cout << "Selecione uma direção:" <<  endl;
+	cout << "Selecione uma direcao:" <<  endl;
 	cout << endl;
 	cout << "   2_   _3   " << endl;
 	cout << "Q    | |    R" << endl;
@@ -259,15 +259,15 @@ void Tutorial(){
 	Tab[8][2] = "TC "; // Z 
 	Tab[8][8] = "TC "; // C 
 	ExibirTab();
-	cout << "O Bipo pode:" << endl;
+	cout << "O Bispo pode:" << endl;
 	cin >> x;
 	cout << "andar nas diagonais quantas casas quiser." << endl << endl;
 	cin >> x;
 
-	cout << "Assim aparece as opções do seu Bispo:" << endl << endl;
+	cout << "Assim aparece as opcoes do seu Bispo:" << endl << endl;
 	cin >> x;
 	cout << "Seu BISPO, da linha" << le << ", coluna" << ce << endl;
-	cout << "Selecione uma direção:" << endl;
+	cout << "Selecione uma direcao:" << endl;
 	cout << endl;
 	cout << "Q       E  " << endl;
 	cout << "  \\   /    " << endl;
@@ -291,19 +291,19 @@ void Tutorial(){
 	Tab[8][2] = "TC "; // Z 
 	Tab[8][8] = "TC "; // C 
 	Tab[2][5] = "TC "; // ^ == W 
-	Tab[5][2] = "TC "; // <- == A 
+	Tab[5][2] = "TC "; // <- == A w
 	Tab[5][8] = "TC "; // -> == D 
 	Tab[8][5] = "TC "; // v == X 
 	ExibirTab();
 	cout << "A Rainha pode:" << endl;
 	cin >> x;
-	cout << "andar nas horizontais, verticais e diagonais quantas casas quiser (é a Torre e o Bispo numa única peça)." << endl << endl;
+	cout << "andar nas horizontais, verticais e diagonais quantas casas quiser (eh a Torre e o Bispo numa unica peca)." << endl << endl;
 	cin >> x;
 
-	cout << "Assim aparece as opções da sua Rainha:" << endl << endl;
+	cout << "Assim aparece as opcoes da sua Rainha:" << endl << endl;
 	cin >> x;
 	cout << "Sua RAINHA, da linha" << le << " coluna" << ce << endl;
-	cout << "Selecione uma direção:" << endl;
+	cout << "Selecione uma direcao:" << endl;
 	cout << endl;
 	cout << " Q  W  E  " << endl;
 	cout << "  \\ ^ /   " << endl;
@@ -336,10 +336,10 @@ void Tutorial(){
 	cout << "andar nas horizontais, verticais e diagonais APENAS 1 CASA." << endl << endl;
 	cin >> x;
 
-	cout << "Assim aparece as opções do seu Rei:" << endl << endl;
+	cout << "Assim aparece as opcoes do seu Rei:" << endl << endl;
 	cin >> x;
 	cout << "Seu REI, da linha" << le << " coluna" << ce << endl;
-	cout << "Selecione uma direção:" << endl;
+	cout << "Selecione uma direcao:" << endl;
 	cout << endl;
 	cout << " Q  W  E  " << endl;
 	cout << "  \\ ^ /   " << endl;
@@ -450,7 +450,7 @@ void ExibirTab(){
 	    cout << "|";
 	    //relatorios na lateral, pra isso pega o l e escreve junto com a tabela
 	    if (l == 3){
-	    	cout << "       Última jogada:";
+	    	cout << "       Ultima jogada:";
 		}
 	    if (l == 4){
 	    	cout << "     " << UltJog << "[" << ultjogil << "," << ultjogic << "]--->[" << ultjogfl << "," << ultjogfc << "]";
@@ -468,7 +468,7 @@ void Legendas(){
 	cout << endl;
 	cout << "                    Legendas:" << endl;
 	cout << endl;
-	cout << "  PP = Peão do Player   / PC = Peão da CPU" << endl;
+	cout << "  PP = Peao do Player   / PC = Peao da CPU" << endl;
 	cout << "  TP = Torre do Player  / TC = Torre da CPU" << endl;
 	cout << "  CP = Cavalo do Player / CC = Cavalo da CPU" << endl;
 	cout << "  BP = Bispo do Player  / BC = Bispo da CPU" << endl;
@@ -551,7 +551,7 @@ void EscolherPeca(){
 			cout << endl;
 			cout << "Sua vez" << endl;
 			cout << endl;
-			cout << "Escolha uma peça" << endl;
+			cout << "Escolha uma peca" << endl;
 			cout << "Linha (de 1 a 8): ";
 			cin >> le;
 			cout << "Coluna (de 1 a 8): ";
@@ -574,13 +574,13 @@ void EscolherPeca(){
       	}else if (Tab[le][ce] == "  "){ //se estiver vazio
             PecaValida = false;
             if (vez == 1){
-				cout << "Casa vazia. Nenhuma peça selecionada!" << endl;
+				cout << "Casa vazia. Nenhuma peca selecionada!" << endl;
 				cin >> x;
         	}
         }else if (Tab[le][ce].at(1) == AdvAt){ // se for do adversario
             PecaValida = false;
         	if (vez == 1){
-	          	cout << "Não é a sua peça!" << endl;
+	          	cout << "Nao eh a sua peca!" << endl;
 	          	cin >> x;
 		   	}
 		}else{
@@ -634,8 +634,8 @@ void PeaoP(){
 	char R; //resposta
 	
    	cout << endl;
-   	cout << "Seu PEÃO, da linha" << le << ", coluna" << ce << endl;
-   	cout << "Selecione uma ação:" << endl;
+   	cout << "Seu PEAO, da linha" << le << ", coluna" << ce << endl;
+   	cout << "Selecione uma acao:" << endl;
    	if (le == 7) { //caso seja primeiro passo do peão
       cout << "     ^ 2" << endl;
       cout << "     |" << endl;
@@ -657,19 +657,19 @@ void PeaoP(){
       	}else{ // caso bloqueado
 	   		MovimentoValido = false;
 	       	comeu = false;
-	       	cout << "Não tem pra ONDE andar." << endl;
+	       	cout << "Nao tem pra ONDE andar." << endl;
 	       	cin >> x;
     	}
 	}else if ((R == '2') && (le == 7)){ //andar 2 casas-----------------------------------------
         if (Tab[le-1][ce] != "  ") {//caso tente pular
             MovimentoValido = false;
             comeu = false;
-            cout << "Não pode PULAR casa." << endl;
+            cout << "Nao pode PULAR casa." << endl;
             cin >> x;
      	}else if (Tab[le-2][ce] != "  "){ // caso bloqueado
           	MovimentoValido = false;
            	comeu = false;
-           	cout << "Já tem uma peça nessa casa." << endl;
+           	cout << "Ja tem uma peca nessa casa." << endl;
            	cin >> x;
         }else{//caso normal
            	MovimentoValido = true;
@@ -682,7 +682,7 @@ void PeaoP(){
         if (ce-1 < 1) { //caso parede
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não tem pra ONDE comer" << endl;
+			cout << "Nao tem pra ONDE comer" << endl;
 			cin >> x;
         }else if (Tab[le-1][ce-1].at(1) == AdvAt) { //caso coma
 			MovimentoValido = true;
@@ -692,14 +692,14 @@ void PeaoP(){
 		}else{ // não comeu e não parede
           	MovimentoValido = false;
           	comeu = false;
-          	cout <<"Não tem QUEM comer." << endl;
+          	cout <<"Nao tem QUEM comer." << endl;
           	cin >> x;
         }
     }else if (R == 'e') { //comer direita--------------------------------------
        	if (ce+1 > 8) { // caso parede
           	MovimentoValido = false;
           	comeu = false;
-          	cout << "Não tem pra ONDE comer." << endl;
+          	cout << "Nao tem pra ONDE comer." << endl;
           	cin >> x;
        	}else if (Tab[le-1][ce+1].at(1) == AdvAt) { //caso coma
             MovimentoValido = true;
@@ -709,13 +709,13 @@ void PeaoP(){
         }else {//não comeu e não parede
             MovimentoValido = false;
             comeu = false;
-            cout << "Não tem QUEM comer."  << endl;
+            cout << "Nao tem QUEM comer."  << endl;
             cin >> x;
         }
     }else{ // se não escolher nenhuma opção válida------------------------------------------
     	MovimentoValido = false;
         comeu = false;
-        cout << "Opção inválida" << endl;
+        cout << "Opcao invalida" << endl;
         cin >> x;
     }
 
@@ -739,8 +739,8 @@ void VingancaP(){
 	
 	do{
 		ExibirTab();
-		cout << "Parabéns! Vc conseguiu cruzar a arena!" << endl;
-		cout << "Escolha uma peça para trocar!" << endl;
+		cout << "Parabens! Vc conseguiu cruzar a arena!" << endl;
+		cout << "Escolha uma peca para trocar!" << endl;
 		cout << "1:Cavalo; 2:Bispo; 3:Torre; 4:Rainha" << endl;
 		V = 0; //xxx evitar lixo, talvez nem precise, mas vai saber...
 		scanf("%d",&V); // xxx isso previne erro de loopar entrada de char quando pede int, botei aki, poderia seria ridículo travar tudo na vingança kk
@@ -748,29 +748,29 @@ void VingancaP(){
 			case 1:
 				system("cls");
 				Tab[alvol][alvoc] = "CP ";
-				cout << "Seu Peão da casa [" << alvol << "," << alvoc << "] foi promovido para Cavalo!" << endl;
+				cout << "Seu Peao da casa [" << alvol << "," << alvoc << "] foi promovido para Cavalo!" << endl;
 				cin >> x; 
 				break;
 			case 2:
 				system("cls");
 				Tab[alvol][alvoc] = "BP ";
-				cout << "Seu Peão da casa [" << alvol << "," << alvoc << "] foi promovido para Bispo!" << endl;
+				cout << "Seu Peao da casa [" << alvol << "," << alvoc << "] foi promovido para Bispo!" << endl;
 				cin >> x;
 				break;
 			case 3:
 				system("cls");
 				Tab[alvol][alvoc] = "TP ";
-				cout << "Seu Peão da casa [" << alvol << "," << alvoc << "] foi promovido para Torre!" << endl;
+				cout << "Seu Peao da casa [" << alvol << "," << alvoc << "] foi promovido para Torre!" << endl;
 				cin >> x;
 				break;
 			case 4:
 				system("cls");
 				Tab[alvol][alvoc] = "RP ";
-				cout <<  "Seu Peão da casa ["<< alvol << "," << alvoc <<"] foi promovido para Rainha!" << endl;
+				cout <<  "Seu Peao da casa ["<< alvol << "," << alvoc <<"] foi promovido para Rainha!" << endl;
 				cin >> x;
 				break;
 			default:
-				cout <<  "Resposta Inválida. Tente novamente" << endl;
+				cout <<  "Resposta Invalida. Tente novamente" << endl;
 				cin >> x;
 				break;
 		}
@@ -785,7 +785,7 @@ void TorreP(){
 	
 	cout << endl;
 	cout << "Sua TORRE, da linha" << le << " coluna" << ce << endl;
-	cout << "Selecione uma direção:" << endl;
+	cout << "Selecione uma direcao:" << endl;
 	cout << endl;
 	cout << "     W      " << endl;
 	cout << "     ^      " << endl;
@@ -802,12 +802,12 @@ void TorreP(){
 		if  ((le-casas < 1) || (casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le-casas][ce].at(1) == JogAt) { //caso sua peça
 				MovimentoValido = false;
 				comeu = false;
-				cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+				cout << "Nao pode comer a PROPRIA PECA." << endl;
 				cin >> x;
 		}else{ // se  não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			TryIn = le-1;
@@ -818,7 +818,7 @@ void TorreP(){
 				if (Tab[TryIn][ce] != "  ") {
 					MovimentoValido = false;
 					comeu = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -840,12 +840,12 @@ void TorreP(){
 		if  ((ce-casas < 1) || (casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le][ce-casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout <<  "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout <<  "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se  não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			TryIn = ce-1;
@@ -856,7 +856,7 @@ void TorreP(){
 				if (Tab[le][TryIn] != "  ") {
 					MovimentoValido = false;
 					comeu = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -878,12 +878,12 @@ void TorreP(){
 		if ((ce+casas > 8) || (casas == 0)) { 	//caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le][ce+casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout <<  "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout <<  "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			TryIn = ce+1;
@@ -894,7 +894,7 @@ void TorreP(){
 				if (Tab[le][TryIn] != "  ") {
 					MovimentoValido = false;
 					comeu = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -916,12 +916,12 @@ void TorreP(){
 		if  ((le+casas > 8) || (casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le+casas][ce].at(1) ==  JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			TryIn = le+1;
@@ -932,7 +932,7 @@ void TorreP(){
 				if (Tab[TryIn][ce] != "  ") {
 					MovimentoValido = false;
 					comeu = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -949,7 +949,7 @@ void TorreP(){
 			}
 		}
 	}else{
-		cout << "Opção inválida" << endl;
+		cout << "Opcao invalida" << endl;
 		cin >> x;
 		comeu = false;
 	}
@@ -960,7 +960,7 @@ void CavaloP(){
 	
 	cout << endl;
 	cout << "Seu CAVALO, da linha" << le << ", coluna"<< ce << endl;
-	cout << "Selecione uma direção:" <<  endl;
+	cout << "Selecione uma direcao:" <<  endl;
 	cout << endl;
 	cout << "   2_   _3   " << endl;
 	cout << "Q    | |    R" << endl;
@@ -975,12 +975,12 @@ void CavaloP(){
 		if  ((le-2 < 1) || (ce-1 < 1)){ //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le-2][ce-1].at(1) == JogAt){ //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{
 			MovimentoValido = true;
@@ -997,12 +997,12 @@ void CavaloP(){
 		if  ((le-2 < 1) || (ce+1 > 8)){ //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le-2][ce+1].at(1) == JogAt){ //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1019,12 +1019,12 @@ void CavaloP(){
 		if ((le-1 < 1) || (ce-2 < 1)){ //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le-1][ce-2].at(1) == JogAt){ //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{
 			MovimentoValido = true;
@@ -1041,12 +1041,12 @@ void CavaloP(){
 		if  ((le-1 < 1) || (ce+2 > 8)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if  (Tab[le-1][ce+2].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{
 			MovimentoValido = true;
@@ -1063,12 +1063,12 @@ void CavaloP(){
 		if ((le+1 > 8) || (ce-2 < 1)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le+1][ce-2].at(1) == JogAt){ //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{
 			MovimentoValido = true;
@@ -1085,12 +1085,12 @@ void CavaloP(){
 		if  ((le+1 > 8) || (ce+2 > 8)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout <<  "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout <<  "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le+1][ce+2].at(1) == JogAt){ //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{
 			MovimentoValido = true;
@@ -1107,12 +1107,12 @@ void CavaloP(){
 		if  ((le+2 > 8) || (ce-1 < 1)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le+2][ce-1].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{
 			MovimentoValido = true;
@@ -1129,12 +1129,12 @@ void CavaloP(){
 		if  ((le+2 > 8) || (ce+1 > 8)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le+2][ce+1].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{
 			MovimentoValido = true;
@@ -1148,7 +1148,7 @@ void CavaloP(){
 			}
 		}
 	}else{//---------------------------------------------------------
-		cout << "Opção inválida" << endl;
+		cout << "Opcao invalida" << endl;
 		cin >> x;
 		comeu = false;
 	}
@@ -1161,10 +1161,10 @@ void BispoP(){
 	int lti; // linha teste inicial
 	int ltf; // linha teste final
 	int cti; // coluna teste inicial
-	
+
 	cout << endl;
 	cout << "Seu BISPO, da linha" << le << ", coluna" << ce << endl;
-	cout << "Selecione uma direção:" << endl;
+	cout << "Selecione uma direcao:" << endl;
 	cout << endl;
 	cout << "Q       E  " << endl;
 	cout << "  \\   /    " << endl;
@@ -1181,12 +1181,12 @@ void BispoP(){
 		if ((le-casas < 1) || (ce-casas < 1) || (casas == 0)) {
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le-casas][ce-casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			lti = le-1;
@@ -1197,7 +1197,7 @@ void BispoP(){
 			for (lti=lti; lti>=ltf; lti--){
 				if (Tab[lti][cti] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1220,12 +1220,12 @@ void BispoP(){
 		if ((le-casas < 1) || (ce+casas > 8) || (casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le-casas][ce+casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 			}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			lti = le-1;
@@ -1236,7 +1236,7 @@ void BispoP(){
 			for (lti=lti; lti>=ltf; lti--){
 				if (Tab[lti][cti] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1259,12 +1259,12 @@ void BispoP(){
 		if ((le+casas > 8) || (ce-casas < 1) || (casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le+casas][ce-casas].at(1) == JogAt) { //caso sua peça
 				MovimentoValido = false;
 				comeu = false;
-				cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+				cout << "Nao pode comer a PROPRIA PECA." << endl;
 				cin >> x;
 			}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 				lti = le+1;
@@ -1275,7 +1275,7 @@ void BispoP(){
 			for (lti=lti; lti<=ltf; lti++){
 				if (Tab[lti][cti] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1298,12 +1298,12 @@ void BispoP(){
 		if ((le+casas > 8) || (ce+casas > 8) || (casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le+casas][ce+casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			lti = le+1;
@@ -1314,7 +1314,7 @@ void BispoP(){
 			for (lti=lti; lti<=ltf; lti++){
 				if (Tab[lti][cti] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1332,7 +1332,7 @@ void BispoP(){
 			}
 		}
 	}else{ //------------------------------------------------------------
-		cout << "Opção inválida" << endl;
+		cout << "Opcao invalida" << endl;
 		cin >> x;
 		comeu = false;
 	}
@@ -1350,7 +1350,7 @@ void RainhaP(){
 
 	cout << endl;
 	cout << "Sua RAINHA, da linha" << le << " coluna" << ce << endl;
-	cout << "Selecione uma direção:" << endl;
+	cout << "Selecione uma direcao:" << endl;
 	cout << endl;
 	cout << " Q  W  E  " << endl;
 	cout << "  \\ ^ /   " << endl;
@@ -1365,12 +1365,12 @@ void RainhaP(){
 		if ((le-casas < 1)||(ce-casas < 1)||(casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le-casas][ce-casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			lti = le-1;
@@ -1380,7 +1380,7 @@ void RainhaP(){
 			for (lti = lti;  lti >= ltf; lti--) { //procedimento padrão
 				if (Tab[lti][cti] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1403,12 +1403,12 @@ void RainhaP(){
 		if ((le-casas < 1)||(casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le-casas][ce].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			TryIn = le-1;
@@ -1417,7 +1417,7 @@ void RainhaP(){
 			for (TryIn = TryIn; TryIn >= TryOut; TryIn--) {//procediemnto padrão
 				if (Tab[TryIn][ce] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1439,12 +1439,12 @@ void RainhaP(){
 		if ((le-casas < 1)||(ce+casas > 8)||(casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le-casas][ce+casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			lti = le-1;
@@ -1454,7 +1454,7 @@ void RainhaP(){
 			for (lti = lti;  lti >= ltf; lti--) { //procedimento padrão
 				if (Tab[lti][cti] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1477,12 +1477,12 @@ void RainhaP(){
 		if ((ce-casas < 1)||(casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if (Tab[le][ce-casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			TryIn = ce-1;
@@ -1491,7 +1491,7 @@ void RainhaP(){
 			for (TryIn = TryIn; TryIn >= TryOut; TryIn--) {//procediemnto padrão
 				if (Tab[le][TryIn] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1513,12 +1513,12 @@ void RainhaP(){
 		if ((ce+casas > 8)||(casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le][ce+casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			TryIn = ce+1;
@@ -1527,7 +1527,7 @@ void RainhaP(){
 			for (TryIn = TryIn; TryIn <= TryOut; TryIn++) {//procediemnto padrão
 				if (Tab[le][TryIn] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1549,12 +1549,12 @@ void RainhaP(){
 		if ((le+casas > 8)||(ce-casas < 1)||(casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le+casas][ce-casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			lti = le+1;
@@ -1564,7 +1564,7 @@ void RainhaP(){
 			for (lti = lti;  lti <= ltf; lti++) { //procedimento padrão
 				if (Tab[lti][cti] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1587,12 +1587,12 @@ void RainhaP(){
 		if ((le+casas > 8)||(casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le+casas][ce].at(1) ==  JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			TryIn = le+1;
@@ -1601,7 +1601,7 @@ void RainhaP(){
 			for (TryIn = TryIn; TryIn <= TryOut; TryIn++) {//procediemnto padrão
 				if (Tab[TryIn][ce] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1623,12 +1623,12 @@ void RainhaP(){
 		if ((le+casas > 8)||(ce+casas > 8)||(casas == 0)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >> x;
 		}else if(Tab[le+casas][ce+casas].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >> x;
 		}else{ // se não for fora, contar as casas anteriores. Ele faz isso tanto pra andar normal, quanto pra comer
 			lti = le+1;
@@ -1638,7 +1638,7 @@ void RainhaP(){
 			for (lti = lti;  lti <= ltf; lti++) { //procedimento padrão
 				if (Tab[lti][cti] != "  ") {
 					MovimentoValido = false;
-					cout << "Não pode PULAR peças." << endl;
+					cout << "Nao pode PULAR pecas." << endl;
 					cin >> x;
 					break;
 				}
@@ -1656,7 +1656,7 @@ void RainhaP(){
 			}
 		}
 	}else{//------------------------------------------------------------
-		cout << "Opção inválida" << endl;
+		cout << "Opcao invalida" << endl;
 		cin >> x;
 		comeu = false;
 	}
@@ -1668,7 +1668,7 @@ void ReiP() {
 
 	cout << endl;
 	cout << "Seu REI, da linha" << le << " coluna" << ce << endl;
-	cout << "Selecione uma direção:" << endl;
+	cout << "Selecione uma direcao:" << endl;
 	cout << endl;
 	cout << " Q  W  E  " << endl;
 	cout << "  \\ ^ /   " << endl;
@@ -1681,12 +1681,12 @@ void ReiP() {
 		if ((le-1 < 1) || (ce-1 < 1)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >>  x;
 		}else if (Tab[le-1][ce-1].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1703,12 +1703,12 @@ void ReiP() {
 		if (le-1 < 1) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >>  x;
 		}else if (Tab[le-1][ce].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1725,12 +1725,12 @@ void ReiP() {
 		if ((le-1 < 1) || (ce+1 > 8)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >>  x;
 		}else if (Tab[le-1][ce+1].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1747,12 +1747,12 @@ void ReiP() {
 		if (ce-1 < 1) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >>  x;
 		}else if (Tab[le][ce-1].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1769,12 +1769,12 @@ void ReiP() {
 		if  (ce+1 > 8) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >>  x;
 		}else if (Tab[le][ce+1].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1791,12 +1791,12 @@ void ReiP() {
 		if ((le+1 > 8) || (ce-1 < 1)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >>  x;
 		}else if (Tab[le+1][ce-1].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1814,12 +1814,12 @@ void ReiP() {
 		if  (le+1 > 8) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >>  x;
 		}else if (Tab[le+1][ce].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1836,12 +1836,12 @@ void ReiP() {
 		if ((le+1 > 8) || (ce+1 < 1)) { //caso fora
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
+			cout << "Nao pode jogar FORA do tabuleiro, nem ficar PARADO." << endl;
 			cin >>  x;
 		}else if (Tab[le+1][ce+1].at(1) == JogAt) { //caso sua peça
 			MovimentoValido = false;
 			comeu = false;
-			cout << "Não pode comer a PRÓPRIA PEÇA." << endl;
+			cout << "Nao pode comer a PROPRIA PECA." << endl;
 			cin >>  x;
 		}else{
 			MovimentoValido = true;
@@ -1855,7 +1855,7 @@ void ReiP() {
 			}
 		}
 	}else{ //------------------------------------------------------------
-		cout << "Opção inválida" << endl;
+		cout << "Opcao invalida" << endl;
 		cin >>  x;
 		comeu = false;
 	}
@@ -1955,22 +1955,22 @@ void VingancaC(){
 	switch (V){
 		case 1:
 			Tab[alvol][alvoc] = "CC ";
-			cout << "Peão da CPU da casa [" << alvol << "," << alvoc << "] foi promovido para Cavalo!" << endl;
+			cout << "Peao da CPU da casa [" << alvol << "," << alvoc << "] foi promovido para Cavalo!" << endl;
 			cin >> x;// embora seja CPU, o player aperta pra prosseguir
 			break;
 		case 2:
 			Tab[alvol][alvoc] = "BC ";
-			cout << "Peão da CPU da casa [" << alvol << "," << alvoc << "] foi promovido para Bispo!" << endl;
+			cout << "Peao da CPU da casa [" << alvol << "," << alvoc << "] foi promovido para Bispo!" << endl;
 			cin >> x;
 			break;
 		case 3:
 			Tab[alvol][alvoc] = "TC ";
-			cout << "Peão da CPU da casa [" << alvol << "," << alvoc << "] foi promovido para Torre!" << endl;
+			cout << "Peao da CPU da casa [" << alvol << "," << alvoc << "] foi promovido para Torre!" << endl;
 			cin >> x;
 			break;
 		case 4:
 			Tab[alvol][alvoc] = "RC ";
-			cout << "Peão da CPU da casa [" << alvol << "," << alvoc << "] foi promovido para Rainha!" << endl;
+			cout << "Peao da CPU da casa [" << alvol << "," << alvoc << "] foi promovido para Rainha!" << endl;
 			cin >> x;
 			break;
 	}
